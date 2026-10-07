@@ -68,15 +68,6 @@ function M.setup()
       vim.opt_local.spell = true
     end,
   })
-
-  vim.api.nvim_create_autocmd("FileType", {
-    group = group,
-    desc = "Show JSON syntax characters",
-    pattern = { "json", "jsonc", "json5" },
-    callback = function()
-      vim.opt_local.conceallevel = 0
-    end,
-  })
 end
 
 return M

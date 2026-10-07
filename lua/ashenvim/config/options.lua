@@ -9,7 +9,6 @@ function M.setup()
 
   opt.autowrite = true
   opt.clipboard = vim.env.SSH_CONNECTION and "" or "unnamedplus"
-  opt.conceallevel = 2
   opt.confirm = true
   opt.cursorline = true
   opt.expandtab = true
